@@ -1,0 +1,102 @@
+int ledPin = D7;
+
+void setup() {
+pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+    waitForButtonPress();
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(1500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(1500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(1500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(1500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(1500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(1000);
+    digitalWrite(D7, LOW);
+    delay(500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(1500);
+    digitalWrite(D7, HIGH);
+    delay(500);
+    digitalWrite(D7, LOW);
+    delay(10000);
+}
+
+void waitForButtonPress()
+{
+    while(digitalRead(BTN) == HIGH)
+    {
+        Particle.process();
+    }
+    delay(50);
+}
